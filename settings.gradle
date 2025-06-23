@@ -1,0 +1,5 @@
+rootProject.name = 'DriverMileageTracker'
+
+include 'DriverMileageTracker-backend'
+include 'DriverMileageTrackerApp'
+
