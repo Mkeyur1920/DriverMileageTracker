@@ -9,6 +9,8 @@ public class RegisterDto {
     private String vehicleNumber;
     private String phoneNumber;
 
+    private String selectedRole;
+
     public String getName() {
         return name;
     }
@@ -55,5 +57,13 @@ public class RegisterDto {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getSelectedRole() {
+        return selectedRole;
+    }
+
+    public void setSelectedRole(String selectedRole) {
+        this.selectedRole = selectedRole;
     }
 }

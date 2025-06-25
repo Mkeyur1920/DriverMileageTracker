@@ -9,13 +9,13 @@ import org.mapstruct.Mappings;
 @Mapper(componentModel = "spring")
 public interface RoleMapper {
 
-    @Mappings({
-            @Mapping(source = "name",target = "roleName")
-    })
+//    @Mappings({
+//            @Mapping(source = "name",target = "roleName")
+//    })
     Role toEntity(RoleDTO dto);
 
-    @Mappings({
-            @Mapping(source = "roleName", target = "name")
-    })
+//    @Mappings({
+//            @Mapping(source = "roleName", target = "name")
+//    })
     RoleDTO toDTO(Role role);
 }

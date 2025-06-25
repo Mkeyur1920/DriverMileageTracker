@@ -84,7 +84,6 @@ export class AppTopbar {
         this.layoutService.layoutConfig.update((state) => ({ ...state, darkTheme: !state.darkTheme }));
     }
     onLogout(){
-        console.log("jdhflkjadshfl")
         this.loginService.logout();
         this.router.navigate(['/']);
         

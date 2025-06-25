@@ -5,5 +5,6 @@ export interface RegisterDTO{
     repassword:string,
     password:string,
     email:string,
+    selectedRole:string;
 
 }

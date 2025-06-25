@@ -14,12 +14,14 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { InputIconModule } from 'primeng/inputicon';
 import { IconFieldModule } from 'primeng/iconfield';
+import { CommonModule } from '@angular/common';
 
 
 
 @Component({
   selector: 'app-add-driver-mileage',
-  imports: [InputTextModule,InputIconModule,IconFieldModule, ToastModule ,InputNumberModule,ButtonModule,ImageModule, FluidModule,FileUploadModule, ButtonModule, SelectModule, FormsModule, TextareaModule],
+  imports: [InputTextModule,
+    CommonModule,InputIconModule,IconFieldModule, ToastModule ,InputNumberModule,ButtonModule,ImageModule, FluidModule,FileUploadModule, ButtonModule, SelectModule, FormsModule, TextareaModule],
   templateUrl: './add-driver-mileage.component.html',
   styleUrl: './add-driver-mileage.component.scss'
 })

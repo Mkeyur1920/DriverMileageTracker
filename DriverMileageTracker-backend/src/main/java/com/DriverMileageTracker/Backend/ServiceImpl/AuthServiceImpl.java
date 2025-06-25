@@ -19,7 +19,9 @@ import org.springframework.stereotype.Service;
 import javax.security.sasl.AuthenticationException;
 import java.beans.Encoder;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 public class AuthServiceImpl implements AuthService {
@@ -74,11 +76,11 @@ public class AuthServiceImpl implements AuthService {
 
         Users user = userMapper.registerDtoToEntity(dto);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
-
+        Role role = roleRepository.findByRoleName(dto.getSelectedRole().toUpperCase());
+        Set<Role> roles = new HashSet<>();
+        roles.add(role);
+        user.setRoles(roles);
         Users savedUser = usersRepository.save(user);
-        Role role = roleRepository.findByRoleName(ROLE.DRIVER.name());
-//        user.setRoles(Collections.singleton(role));
-
         return userMapper.entityToRegisterDto(savedUser);
     }
 
