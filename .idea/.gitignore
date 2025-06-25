@@ -3,8 +3,13 @@
 /workspace.xml
 **.gradle/
 
-../.gradle
-../.idea
+../.gradle/
+../.idea/
 ../DriverMileageTracker-backend/build/
 ../build/
-
+/vcs.xml
+/modules.xml
+/misc.xml
+/jarRepositories.xml
+/gradle.xml
+modules/
