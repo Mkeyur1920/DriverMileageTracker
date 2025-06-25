@@ -1,0 +1,82 @@
+# ========================
+# 📁 OS-Specific Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# 📁 IDEs (IntelliJ / VS Code)
+# ========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+
+# IntelliJ project-specific
+out/
+shelf/
+*.class
+
+# VS Code extension folders (optional)
+.history/
+.ionide/
+
+# ========================
+# 📁 Java + Spring Boot (Backend)
+# ========================
+**/target/
+**/.classpath
+**/.project
+**/.settings/
+**/.gradle/
+**/build/
+
+# Maven
+.mvn/
+**/dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Application properties (if sensitive info)
+# Uncomment if you don't want to share these
+# **/application.properties
+# **/application.yml
+
+# ========================
+# 📁 Angular (Frontend)
+# ========================
+**/dist/
+**/node_modules/
+**/.angular/cache/
+**/.angular/local/
+.angular/
+
+# Package lock files (optional to ignore)
+# yarn.lock
+# package-lock.json
+
+# Test output
+coverage/
+
+# Environment files (if sensitive)
+# **/src/environments/environment*.ts
+
+# ========================
+# 📁 Others
+# ========================
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
